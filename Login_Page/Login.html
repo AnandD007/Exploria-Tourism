@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Login | Exploria</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Clean.css">
+    <link rel="stylesheet" href="assets/css/Navigation-with-Button.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/untitled.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg navigation-clean-button" style="border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;">
+        <div class="container"><a class="navbar-brand fs-3" href="..\Home-Exploria\HomePage.html" style="font-family:'Segoe UI Semibold';text-shadow: 1px 1px var(--bs-pink);">Exploria</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1" style="border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon" style="border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1" style="border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;">
+                <ul class="navbar-nav me-auto"></ul><span class="navbar-text actions"> <a class="login" href="..\Aboutus-Exploria\AboutUs.html">About Us</a><a class="btn btn-light action-button" role="button" href="..\Registration_Page\Registration.html" style="background: var(--bs-purple);">&nbsp;Sign Up&nbsp;</a></span>
+            </div>
+        </div>
+    </nav>
+    <section class="login-clean" style="background: linear-gradient(-85deg, indigo,orange), var(--bs-indigo);filter: brightness(101%) hue-rotate(0deg);min-height: 650px;max-height: 900px;height: 900px;">
+        <form class="shadow-lg m-auto" method="post" style="padding: 20px;border-radius: 25px;width: 500px;"action="http://localhost:8050/Anand/jsp/log_in.jsp">
+            <h2 class="visually-hidden">Login Form</h2>
+            <div class="illustration"><i class="icon ion-android-person"></i>
+                <h3 class="display-6">User Login</h3>
+            </div>
+            <div class="mb-3"><input class="border rounded shadow-lg form-control" type="email" name="Username" placeholder="Enter Your Registered Email Id" required=""></div>
+            <div class="mb-3"><input class="border rounded shadow-lg form-control" type="password" maxlength="12" name="Password" placeholder="Password" required=""></div>
+            <div class="mb-3"><button class="btn btn-primary shadow-lg d-block w-100" type="submit">Log In</button></div><a class="forgot" href="..\ForgotPassword_Page\Forgot_Password.html">Forgot your password?</a>
+        </form>
+    </section>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Places Booking - Delhi | Exploria</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/dh-card-image-left-dark.css">
+    <link rel="stylesheet" href="assets/css/Footer-Basic.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+    <link rel="stylesheet" href="assets/css/Lightbox-Gallery.css">
+    <link rel="stylesheet" href="assets/css/Navigation-e-commerce.css">
+    <link rel="stylesheet" href="assets/css/Navigation-with-Search.css">
+    <link rel="stylesheet" href="assets/css/steps-progressbar.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+		<link rel="stylesheet" href="assets/css/styles.css">
+	<link href="//fonts.googleapis.com/css?family=Aleo:300,300i,400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+	 rel="stylesheet">
+	 <!--// Meta tag Keywords -->
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<!-- Custom-Files 
+	<link rel="stylesheet" href="css/bootstrap.css">-->
+	<!-- Bootstrap-Core-CSS -->
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+	<!-- Style-CSS 
+	<link href="css/font-awesome.min.css" rel="stylesheet">-->
+
+	<style>
+	.button-labels label { 
+    display: inline-block; 
+    border: solid 1px #ddd; 
+    background-color: #eee;
+    padding: 3px;
+	}
+	</style>
+	<script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+
+</head>
+
+<body style="background: #f4bfd1;">
+    <div>
+        <nav class="navbar navbar-light navbar-expand-md flex-wrap" style="box-shadow: 0px 0.1px 7px 0px;background: var(--bs-gray-100);">
+            <div class="container">
+                <div><a class="navbar-brand fs-4" href="..\Home-Exploria\HomePage.html" style="font-family:'Segoe UI Semibold';text-shadow: 1px 1px var(--bs-indigo);"><strong>&nbsp;Exploria&nbsp; &nbsp;</strong></a></div><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="..\Home-Exploria\HomePage.html#attractions">Top Attractions</a></li>
+                        <li class="nav-item"></li>
+                        <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="file:///">&nbsp;Places&nbsp;</a>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="..\Mumbai-Places\Mumbai_Places.html">Mumbai</a><a class="dropdown-item" href="..\Jaipur-Places\Jaipur_Places.html">Jaipur</a><a class="dropdown-item" href="..\Pune-Places\Pune_Places.html">Pune</a></div>
+                        </li>
+                        <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="file:///">Account</a>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="..\Payment-Billing-Details\Payment_Billing_Details.jsp">Billing Details</a><a class="dropdown-item" href="..\Booking_User-Profile-Page\User_Profile_Page.jsp">My Profile</a><a class="dropdown-item" href="..\Login_Page\Login.html">Log Out</a></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="row">
+        <div class="col-12 text-center d-inline-flex d-md-flex align-items-center align-content-center align-self-center flex-nowrap m-auto">
+            <ul class="d-flex d-sm-flex d-lg-flex justify-content-center justify-content-sm-center justify-content-lg-center progressbar w-100" style="margin-top: 30px;">
+                <li class="active">Choose Place</li>
+                <li>Choose Date-Time &amp; Tourist Ticket Type</li>
+                <li>Payment</li>
+            </ul>
+        </div>
+    </div>
+    <section class="photo-gallery" style="background: #f4bfd1;">
+        <div class="container">
+            <div class="intro">
+                <h5 class="display-6 text-center" style="text-shadow: 1px 1px var(--bs-purple);">Tourist Places in Delhi</h5>
+                <p class="text-center">Find Your Favorite Travel Attraction Places in Delhi &amp; Click To Pre-Book&nbsp;</p>
+            </div>
+        </div>
+    </section>
+	<form method = "GET" action = "http://localhost:8050/Anand/jsp/Delhi.jsp">
+    <section style="margin-bottom: 40px;margin-top: 20px;">
+        <div class="container" data-aos="fade-up" data-aos-once="true">
+            <div class="photo-card" style="border-top-left-radius: 15px;border-top-right-radius: 15px;border-bottom-right-radius: 15px;border-bottom-left-radius: 15px;">
+                <div class="photo-background" style="background-image: url(&quot;assets/img/India_gate_2.jpg&quot;);"></div>
+                <div class="text-start photo-details" id="indiagate" style="color: var(--bs-gray-900);background: linear-gradient(#755426 13%, var(--bs-gray)), var(--bs-pink);border-top-right-radius: 10px;border-bottom-right-radius: 10px;">
+                    <h1>India Gate</h1>
+                    <p>Rajpath Marg, New Delhi<br>The capital of India, Delhi is a cosmopolitan city with a historic old Delhi and the modern New Delhi. From historical monuments to crowded shopping malls, from an extensive network of the modern metro system to Delhi University campus, Dilli has multiple personalities and is considered to be the city with a heart.</p>
+                    <div class="photo-tags">
+                        <ul class="d-flex justify-content-center">
+                            <li><a class="text-capitalize" href="#gal1">View Photos</a></li>
+                            <li><a class="text-capitalize" href="file:///"><input type="checkbox" id="finRot1" name="Delhi" value="16">
+<label for="finRot1"><strong>Book Now</strong></label></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="margin-bottom: 40px;margin-top: 20px;">
+        <div class="container" data-aos="fade-up" data-aos-once="true">
+            <div class="d-flex photo-card" style="border-top-left-radius: 15px;border-top-right-radius: 15px;border-bottom-right-radius: 15px;border-bottom-left-radius: 15px;">
+                <div id="qutubminar" class="photo-background" style="background-image: url(&quot;assets/img/qutub_minar_1.jpg&quot;);padding-left: 50px;padding-right: 50px;"></div>
+                <div class="text-start photo-details" style="color: var(--bs-gray-900);background: linear-gradient(#7a2638 13%, var(--bs-gray)), var(--bs-pink);border-top-right-radius: 10px;border-bottom-right-radius: 10px;padding-right: 50px;padding-left: 50px;">
+                    <h1>Qutub Minar</h1>
+                    <p>Mehrauli, New Delhi<br>Qutub Minar is a minaret or a victory tower located in Qutub complex, a UNESCO World Heritage Site in Delhi's Mehrauli area. With the height of 72.5 metres (238 ft), Qutub Minar is the second tallest monument of Delhi. Its construction was started in 1192 by Qutb Ud-Din-Aibak, founder of Delhi Sultanate after he defeated the last Hindu Ruler of Delhi. He constructed the basement, after which the construction was taken over by his son-in-law and successor Iltutmish who constructed three additional stories. <br></p>
+                    <div class="photo-tags">
+                        <ul class="d-sm-flex justify-content-sm-center">
+                            <li><a class="text-capitalize" href="#gal2">View Photos</a></li>
+                            <li><a class="text-capitalize" href="file:///"><input type="checkbox" id="finRot2" name="Delhi" value="17">
+<label for="finRot2"><strong>Book Now</strong></label></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="margin-bottom: 40px;margin-top: 20px;">
+        <div class="container" data-aos="fade-up" data-aos-once="true">
+            <div id="humayunstomb" class="photo-card" style="border-top-left-radius: 15px;border-top-right-radius: 15px;border-bottom-right-radius: 15px;border-bottom-left-radius: 15px;">
+                <div class="photo-background" style="background-image: url(&quot;assets/img/Humayun_tomb_6.jpg&quot;);"></div>
+                <div class="text-start photo-details" style="color: var(--bs-gray-900);background: linear-gradient(var(--bs-red) 13%, var(--bs-gray)), var(--bs-pink);border-top-right-radius: 10px;border-bottom-right-radius: 10px;">
+                    <h1>Humayun's Tomb</h1>
+                    <p>Nizamuddin East, New Delhi<br>As the name suggests, Humayun's tomb is the final resting place of the Mughal Emperor Humayun. Located in the Nizamuddin East area of Delhi, it is the first garden-tomb in the Indian subcontinent. This splendid piece of architecture was commissioned for construction by Humayun's chief consort Empress Bega Begum in the year 1569-70 and is one of the very few structures that used red sandstone on such a massive scale at that time. The design of Humayun's tomb is a typical Mughal architecture with Persian influences and was conceptualised by Persian architect Mirak Mirza Ghiyath. Owing to its magnificent design and illustrious history, Humayun's Tomb was featured in UNESCO's World Heritage List in the year 1993.<br></p>
+                    <div class="photo-tags">
+                        <ul class="d-flex justify-content-center">
+                            <li><a class="text-capitalize" href="#gal3">View Photos</a></li>
+                            <li><a class="text-capitalize" href="file:///"><input type="checkbox" id="finRot3" name="Delhi" value="18">
+<label for="finRot3"><strong>Book Now</strong></label></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="margin-bottom: 40px;margin-top: 20px;">
+        <div class="container" data-aos="fade-up" data-aos-once="true">
+            <div class="text-capitalize photo-card" style="border-top-left-radius: 15px;border-top-right-radius: 15px;border-bottom-right-radius: 15px;border-bottom-left-radius: 15px;">
+                <div class="photo-background" style="background-image: url(&quot;assets/img/Akshardham_temple_1.jpg&quot;);"></div>
+                <div class="text-start photo-details" style="color: var(--bs-gray-900);background: linear-gradient(#d6606d 13%, var(--bs-gray)), var(--bs-pink);border-top-right-radius: 10px;border-bottom-right-radius: 10px;">
+                    <h1>Akshardham Temple</h1>
+                    <p>Pandav Nagar, New Delhi<br>The Akshardham Temple is known for its stunning architecture. It has eight ostentatiously carved mandapams while timeless Hindu teachings and flamboyant devotional traditions find their place on the temple's walls. The centrepiece, i.e. Lord Swaminarayan's Murti along with that of 20,000 deities, significant personalities in Indian history and sages showcase the essence of Indian architecture, traditions and timeless spiritual thoughts.&nbsp;Akshardham complex is home to India's largest step well which is a host to the mesmerising water show; an open garden, Narayan Sarovar, various expeditions, and rituals. The complex is not less than a paradise for spiritual seekers.<br></p>
+                    <div class="photo-tags">
+                        <ul class="d-flex justify-content-center">
+                            <li><a class="text-capitalize" href="#gal4">view Photos</a></li>
+                            <li><a class="text-capitalize" href="file:///"><input type="checkbox" id="finRot4" name="Delhi" value="19">
+<label for="finRot4"><strong>Book Now</strong></label></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="margin-bottom: 40px;margin-top: 20px;">
+        <div class="container" data-aos="fade-up" data-aos-once="true">
+            <div class="text-capitalize photo-card" style="border-top-left-radius: 15px;border-top-right-radius: 15px;border-bottom-right-radius: 15px;border-bottom-left-radius: 15px;">
+                <div class="photo-background" style="background-image: url(&quot;assets/img/lotus_temple_1.jpg&quot;);"></div>
+                <div class="text-start photo-details" style="color: var(--bs-gray-900);background: linear-gradient(#007c66 13%, var(--bs-gray)), var(--bs-pink);border-top-right-radius: 10px;border-bottom-right-radius: 10px;">
+                    <h1>Lotus Temple</h1>
+                    <p>Kalkaji, New Delhi<br>Located in the national capital of New Delhi, the Lotus Temple is an edifice dedicated to the Baha'i faith. The magnificent structure of this building unfolds in the form of a stupendous white petal lotus and is one of the most visited establishments in the world. The design of this shrine was conceptualized by Canadian architect Fariborz Sahba and was completed in the year 1986. This temple seeks to propagate the oneness of the Almighty and is open to all regardless of their nationality, religion, race or gender. The Lotus temple is one of the seven Baha'i House of Worship present around the world.<br></p>
+                    <div class="photo-tags">
+                        <ul class="d-flex justify-content-center">
+                            <li><a class="text-capitalize" href="#gal5">view photos</a></li>
+                            <li><a class="text-capitalize" href="file:///"><input type="checkbox" id="finRot5" name="Delhi" value="21">
+<label for="finRot5"><strong>Book Now</strong></label></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+	
+	<!-- popup-->
+			<div id="gal1" class="pop-overlay animate">
+				<div class="popup">
+				<div class="w3-content w3-display-container">
+  <img class="mySlides1 rounded" src="assets/img/India_gate_1.jpg" style="width:100%">
+  <img class="mySlides1 rounded" src="assets/img/India_gate_2.jpg" style="width:100%">
+  <img class="mySlides1 rounded" src="assets/img/India_gate_3.jpg" style="width:100%">
+  <img class="mySlides1 rounded" src="assets/img/India_gate_4.jpg" style="width:100%">
+
+  <button class="w3-button w3-black w3-display-left" type="button" onclick="plusDivs1(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" type="button" onclick="plusDivs1(1)">&#10095;</button>
+</div>
+<script>
+var slideIndex = 1;
+showDivs1(slideIndex);
+
+function plusDivs1(n) {
+  showDivs1(slideIndex += n);
+}
+
+function showDivs1(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides1");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+slideIndex = 1;
+</script>
+					<a class="close" href="#gallery">&times;</a>
+				</div>
+			</div>
+	<div id="gal2" class="pop-overlay animate">
+				<div class="popup">
+				<div class="w3-content w3-display-container">
+  <img class="mySlides2 rounded" src="assets/img/qutub_minar_1.jpg" style="width:100%">
+  <img class="mySlides2 rounded" src="assets/img/qutub_minar_2.jpg" style="width:100%">
+  <img class="mySlides2 rounded" src="assets/img/qutub_minar_3.jpg" style="width:100%">
+  <img class="mySlides2 rounded" src="assets/img/qutub_minar_4.jpg" style="width:100%">
+
+  <button class="w3-button w3-black w3-display-left" type="button" onclick="plusDivs2(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" type="button" onclick="plusDivs2(1)">&#10095;</button>
+</div>
+					<a class="close" href="#gallery">&times;</a>
+				</div>
+			</div>
+<script>
+var slideIndex = 1;
+showDivs2(slideIndex);
+
+function plusDivs2(n) {
+  showDivs2(slideIndex += n);
+}
+
+function showDivs2(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides2");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+slideIndex = 1;
+</script>
+	<div id="gal3" class="pop-overlay animate">
+				<div class="popup">
+				<div class="w3-content w3-display-container">
+  <img class="mySlides3 rounded" src="assets/img/Humayun_tomb_1.jpg" style="width:100%">
+  <img class="mySlides3 rounded" src="assets/img/Humayun_tomb_2.jpg" style="width:100%">
+  <img class="mySlides3 rounded" src="assets/img/Humayun_tomb_3.jpg" style="width:100%">
+  <img class="mySlides3 rounded" src="assets/img/Humayun_tomb_5.jpg" style="width:100%">
+
+  <button class="w3-button w3-black w3-display-left" type="button" onclick="plusDivs3(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" type="button" onclick="plusDivs3(1)">&#10095;</button>
+</div>
+					<a class="close" href="#gallery">&times;</a>
+				</div>
+			</div>
+<script>
+var slideIndex = 1;
+showDivs3(slideIndex);
+
+function plusDivs3(n) {
+  showDivs3(slideIndex += n);
+}
+
+function showDivs3(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides3");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+slideIndex = 1;
+</script>
+	<div id="gal4" class="pop-overlay animate">
+				<div class="popup">
+				<div class="w3-content w3-display-container">
+  <img class="mySlides4 rounded" src="assets/img/Akshardham_temple_1.jpg" style="width:100%">
+  <img class="mySlides4 rounded" src="assets/img/Akshardham_temple_2.jpg" style="width:100%">
+  <img class="mySlides4 rounded" src="assets/img/Akshardham_temple_3.jpg" style="width:100%">
+  <img class="mySlides4 rounded" src="assets/img/Akshardham_temple_4.jpg" style="width:100%">
+
+  <button class="w3-button w3-black w3-display-left" type="button" onclick="plusDivs4(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" type="button" onclick="plusDivs4(1)">&#10095;</button>
+</div>
+					<a class="close" href="#gallery">&times;</a>
+				</div>
+			</div>
+<script>
+var slideIndex = 1;
+showDivs4(slideIndex);
+
+function plusDivs4(n) {
+  showDivs4(slideIndex += n);
+}
+
+function showDivs4(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides4");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+slideIndex = 1;
+</script>
+	<div id="gal5" class="pop-overlay animate">
+				<div class="popup">
+				<div class="w3-content w3-display-container">
+  <img class="mySlides5 rounded" src="assets/img/lotus_temple_1.jpg" style="width:100%">
+  <img class="mySlides5 rounded" src="assets/img/lotus_temple_2.jpg" style="width:100%">
+  <img class="mySlides5 rounded" src="assets/img/lotus_temple_3.jpg" style="width:100%">
+  <img class="mySlides5 rounded" src="assets/img/lotus_temple_4.jpg" style="width:100%">
+
+  <button class="w3-button w3-black w3-display-left" type="button" onclick="plusDivs5(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" type="button" onclick="plusDivs5(1)">&#10095;</button>
+</div>
+					<a class="close" href="#gallery">&times;</a>
+				</div>
+			</div>
+			<script>
+var slideIndex = 1;
+showDivs5(slideIndex);
+
+function plusDivs5(n) {
+  showDivs5(slideIndex += n);
+}
+
+function showDivs5(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides5");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+slideIndex = 1;
+</script>
+    <div class="d-flex d-sm-flex d-lg-flex justify-content-center justify-content-sm-center justify-content-lg-end"><a href="..\Home-Exploria\HomePage.html"><button class="btn btn-primary border rounded-pill shadow-lg" type="button" style="height: 40px;width: 180px;background: var(--bs-red);color: var(--bs-light);">Cancel</button></a><button class="btn btn-primary border rounded-pill shadow-lg" type="submit" style="height: 40px;width: 180px;background: var(--bs-success);color: var(--bs-light);margin-left: 20px;margin-right: 20px;">Click Proceed</button></div>
+    </form>
+	<footer class="footer-basic" style="background: var(--bs-gray-dark);color: var(--bs-light);margin-top: 20px;border-top-left-radius: 20px;border-top-right-radius: 20px;">
+        <h1 style="text-align: center;margin-bottom: 20px;font-family:'Segoe UI Semibold';text-shadow: 2px 2px var(--bs-indigo);">Exploria</h1>
+        <div class="social"><a href="https://www.instagram.com/"><i class="icon ion-social-instagram"></i></a><a href="https://in.linkedin.com/"><i class="icon ion-social-linkedin"></i></a><a href="https://www.twitter.com/"><i class="icon ion-social-twitter"></i></a><a href="https://www.facebook.com/"><i class="icon ion-social-facebook"></i></a></div>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="..\Home-Exploria\HomePage.html">Home</a></li>
+            <li class="list-inline-item"><a href="..\Home-Exploria\HomePage.html#services">Services</a></li>
+            <li class="list-inline-item"><a href="..\Aboutus-Exploria\AboutUs.html">About</a></li>
+        </ul>
+        <p class="copyright">Exploria © 2022 All rights are reserved&nbsp;<br></p>
+    </footer>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+    <script src="assets/js/Lightbox-Gallery.js"></script>
+</body>
+
+</html>

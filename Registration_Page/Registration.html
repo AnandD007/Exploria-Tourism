@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Registration | Exploria</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/Navigation-with-Button.css">
+    <link rel="stylesheet" href="assets/css/Registration-Form-with-Photo.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg navigation-clean-button" style="border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;">
+        <div class="container"><a class="navbar-brand fs-3" href="..\Home-Exploria\HomePage.html" style="font-family:'Segoe UI Semibold';text-shadow: 1px 1px var(--bs-pink);">Exploria</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1" style="border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon" style="border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1" style="border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;">
+                <ul class="navbar-nav me-auto"></ul><span class="navbar-text actions"> <a class="login" href="..\Aboutus-Exploria\AboutUs.html">About Us</a><a class="btn btn-light action-button" role="button" href="..\Login_Page\Login.html">Log In</a></span>
+            </div>
+        </div>
+    </nav>
+    <section class="register-photo" style="background: linear-gradient(109deg, var(--bs-purple), var(--bs-pink) 32%, var(--bs-red));min-height: 650px;max-height: 900px;height: 900px;">
+        <div class="form-container">
+            <form class="shadow-lg"  method="post" action="http://localhost:8050/Anand/jsp/create_account.jsp">
+                <h6 class="display-6 text-center"><strong>Create</strong> an account.</h6>
+                <div class="mb-3"><input class="form-control" type="text" name="FullName" placeholder="Full Name" required=""></div>
+                <div class="mb-3"><input class="form-control" type="email" name="Email" placeholder="Email" required="" inputmode="email"></div>
+                <div class="mb-3"><input class="form-control" type="tel" name="PhoneNumber" min="10" maxlength="10" placeholder="Phone Number" required=""></div>
+                <div class="mb-3"><input class="form-control" type="password" name="Password" min="8" maxlength="12" placeholder="Password" required=""></div>
+                <div class="mb-3"><input class="form-control" type="password" name="passwordconfirm" maxlength="12" placeholder="Confirm Password" required=""></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6"><select class="border rounded form-select" name="gender" value="Gender Selection" style="width: 305px;color: var(--bs-gray-600);margin-bottom: 10px;margin-left: 20px;" required="">
+                                <option value="" selected="">Gender Selection</option>
+                                <optgroup label="Gender">
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                    <option value="Other">Other</option>
+                                </optgroup>
+                            </select></div>
+                        <div class="col-md-6"><input class="border rounded form-control" type="number" style="width: 305px;margin-bottom: 10px;margin-left: 20px;" min="0" max="125" placeholder="Age Selection" required="" name="Age"></div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="form-check"><label class="form-check-label"><input class="form-check-input" type="checkbox" required="">I agree to the license terms.</label></div>
+                </div>
+                <div class="mb-3"><button class="btn btn-primary d-block w-100" type="submit" style="border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 15px;border-bottom-left-radius: 15px;">Sign Up</button></div><a class="already" href="..\Login_Page\Login.html">You already have an account? Login here.</a>
+            </form>
+        </div>
+    </section>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

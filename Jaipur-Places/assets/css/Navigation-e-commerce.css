@@ -1,0 +1,16 @@
+.navbar-form.navbar-left {
+  width: 39%;
+}
+
+.navbar-form .input-group:last-child {
+  width: 100%;
+}
+
+#basic-addon1 {
+  width: 40px;
+}
+
+.navbar-form .input-group > .form-control {
+  width: inherit;
+}
+

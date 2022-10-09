@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Booking_Page-Exploria</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="assets/css/Checkbox-Button-1.css">
+    <link rel="stylesheet" href="assets/css/Checkbox-Button.css">
+    <link rel="stylesheet" href="assets/css/Footer-Basic.css">
+    <link rel="stylesheet" href="assets/css/Navigation-with-Search.css">
+    <link rel="stylesheet" href="assets/css/steps-progressbar.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body style="background: #f4bfd1;">
+    <nav class="navbar navbar-light navbar-expand-md flex-wrap" style="box-shadow: 0px 0.1px 7px 0px;background: var(--bs-gray-200);">
+        <div class="container">
+            <div><a class="navbar-brand fs-4" href="..\Home-Exploria\HomePage.html" style="font-family:'Segoe UI Semibold';text-shadow: 1px 1px var(--bs-purple);"><strong>&nbsp;Exploria&nbsp; &nbsp;</strong></a></div><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-2">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="..\Home-Exploria\HomePage.html#attractions">Top Attractions</a></li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#">&nbsp;Places&nbsp;</a>
+                        <div class="dropdown-menu"><a class="dropdown-item" href="..\Pune-Places\Pune_Places.html">Pune</a><a class="dropdown-item" href="..\Jaipur-Places\Jaipur_Places.html">Jaipur</a><a class="dropdown-item" href="..\Delhi-Places\Delhi_Places.html">Delhi</a><a class="dropdown-item" href="..\Mumbai-Places\Mumbai_Places.html">Mumbai</a></div>
+                    </li>
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#">Account</a>
+                        <div class="dropdown-menu"><a class="dropdown-item" href="..\Payment-Billing-Details\Payment_Billing_Details.jsp">Billing Details</a><a class="dropdown-item" href="..\Booking_User-Profile-Page\User_Profile_Page.jsp">My Profile</a><a class="dropdown-item" href="..\Login_Page\Login.html">Log Out</a></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="row d-sm-flex" style="margin-top: 15px;">
+        <div class="col d-flex d-sm-flex">
+            <ul class="d-flex d-sm-flex justify-content-center justify-content-sm-center justify-content-lg-center progressbar w-100" style="margin-top: 30px;">
+                <li class="active">Choose Place</li>
+                <li class="active">Choose Date-Time &amp; Tourist Ticket Type</li>
+                <li>Payment</li>
+            </ul>
+        </div>
+    </div>
+	<form method = "GET" action = "http://localhost:8050/Anand/jsp/Booking_Page.jsp">
+    <div style="text-align: center;margin-top: 40px;">
+        <h1 class="display-5" style="font-size: 25px;">Enter Booking Date &amp; Time</h1><input class="border rounded-pill shadow-lg" type="time" name="Time" style="padding: 8px;margin-top: 10px;" required=""><input class="border rounded-pill shadow-lg" type="date" name="Date" style="padding: 8px;margin-top: 10px;" required="">
+    </div>
+    <div style="text-align: center;margin-top: 40px;">
+        <h1 class="display-5" style="font-size: 25px;margin-bottom: 15px;">Enter Number of Tickets</h1><input class="border rounded-pill shadow-lg" type="number" name = "num" placeholder="Enter Number of Tickets to book" style="margin-top: 25px;padding: 8px;width: 280px;">
+    </div>
+    <div style="text-align: center;margin-top: 40px;">
+        <h1 class="display-5" style="font-size: 25px;margin-bottom: 15px;">Book Travel Guide</h1>
+        <h1 class="display-5" style="font-size: 15px;margin-bottom: 15px;text-align: center;color: var(--bs-green);margin-right: 10px;font-weight: bold;"><div class="btn-group" data-toggle="buttons">
+	<label class="btn btn-success active">
+	  <input type="checkbox" name = "Guide" value = "1" autocomplete="off">
+	  <span class="glyphicon glyphicon-ok"></span>
+	</label>
+</div>
+&nbsp;Book Our Best Travel Guides for Your Tourist Destinations</h1>
+        <h1 class="display-5" style="font-size: 15px;margin-bottom: 15px;text-align: center;color: var(--bs-red);margin-right: 10px;margin-top: 40px;">*All the above details required accept travel guide field (It is only opt-in or opt-out field) for you.&nbsp;</h1>
+    </div>
+    <section class="d-flex"></section>
+    <section class="d-flex justify-content-sm-center">
+        <div class="d-sm-flex d-lg-flex justify-content-sm-center justify-content-lg-end" style="margin-right: 20px;"><button class="btn btn-primary border rounded-pill shadow-lg" type="button" style="padding: 10px 50px;background: var(--bs-orange);margin-left: 60px;margin-top: 10px;">Cancel Process</button><button class="btn btn-primary border rounded-pill shadow-lg" type="submit" style="margin-left: 30px;padding: 10px 50px;background: var(--bs-teal);margin-top: 10px;">Checkout to Payments</button></div>
+    </section>
+	</form>
+    <footer class="footer-basic" style="background: var(--bs-gray-dark);color: var(--bs-light);margin-top: 20px;border-top-left-radius: 20px;border-top-right-radius: 20px;">
+        <h1 style="text-align: center;margin-bottom: 20px;font-family:'Segoe UI Semibold';text-shadow: 2px 2px var(--bs-indigo);">Exploria</h1>
+        <div class="social"><a href="https://www.instagram.com/"><i class="icon ion-social-instagram"></i></a><a href="https://in.linkedin.com/"><i class="icon ion-social-linkedin"></i></a><a href="https://www.twitter.com/"><i class="icon ion-social-twitter"></i></a><a href="https://www.facebook.com/"><i class="icon ion-social-facebook"></i></a></div>
+        <ul class="list-inline d-sm-flex justify-content-sm-center">
+            <li class="list-inline-item"><a href="..\Home-Exploria\HomePage.html">Home</a></li>
+            <li class="list-inline-item"><a href="..\Home-Exploria\HomePage.html#services">Services</a></li>
+            <li class="list-inline-item d-sm-flex"><a href="..\Aboutus-Exploria\AboutUs.html">About</a></li>
+        </ul>
+        <p class="copyright">Exploria © 2022 All rights are reserved&nbsp;<br></p>
+    </footer>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/Bootstrap-DateTime-Picker-1.js"></script>
+    <script src="assets/js/Bootstrap-DateTime-Picker-2.js"></script>
+    <script src="assets/js/Bootstrap-DateTime-Picker.js"></script>
+</body>
+
+</html>
