@@ -1,6 +1,6 @@
 # Exploria-Tourism
 
-### Local Tourism Interactive & Responsive Website with Hybrid Automation.
+### Local Tourist Attraction & Guide Booking Interactive & Responsive Website with Hybrid Automation.
 ----
 
 ### Project Tech Stack
